@@ -3,7 +3,7 @@ import os
 import time
 import RPi.GPIO as GPIO
 
-# Set the GPIO pin naming mode 
+# Set the GPIO pin naming mode
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
@@ -30,7 +30,7 @@ def SteadyRed():
 # (If you have the 'pedestrian' LEDs, turn the red off and green on)
 def StartWalking():
     # Try and make the buzzer buzz on and off, half a second of
-    # sound followed by half a second of silence 
+    # sound followed by half a second of silence
 
 # Turn the buzzer off and wait for 2 seconds
 # (If you have a second green 'pedestrian' LED, make it flash on and
@@ -59,7 +59,7 @@ print("Traffic Lights")
 StartGreen()
 
 # Here is the loop that waits at lease 20 seconds before
-# stopping the cars if the button has been pressedS 
+# stopping the cars if the button has been pressedS
 while True: # Loop around forever
     ButtonNotPressed = True # Button has not been pressed
     start = time.clock() # Records the current time
