@@ -43,12 +43,12 @@ if led_choice == 3:
     LEDChoice = LEDGreen
 
 # If we have chosen a valid choice, flash the LED
-if LEDChoice>0:
+if LEDChoice > 0:
     while count > 0:
         GPIO.output(LEDChoice, GPIO.HIGH)
         time.sleep(1)
         GPIO.output(LEDChoice, GPIO.LOW)
         time.sleep(1)
         count = count - 1
-        
+
 GPIO.cleanup()
