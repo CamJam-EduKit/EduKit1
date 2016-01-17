@@ -3,14 +3,14 @@ import os
 import time
 import RPi.GPIO as GPIO
 
-# Set the GPIO pin naming mode 
+# Set the GPIO pin naming mode
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
 PINBuzzer = 22 # Sets the buzzer pin 22
 
 # Sets PINBuzzer as an output pin and initialise it to 'off'
-GPIO.setup(PINBuzzer, GPIO.OUT, initial=0)
+GPIO.setup(PINBuzzer, GPIO.OUT, initial = 0)
 
 def dot(): # A single Morse dot
     GPIO.output(PINBuzzer, GPIO.HIGH)
@@ -42,7 +42,7 @@ def morseO(): # The Morse for O, ---
 
 os.system('clear') # Clears the screen
 print("Morse Code")
-# Prompt 
+# Prompt
 loop_count = input("How many times would you like SOS to loop?: ")
 loop_count = int(loop_count)
 
