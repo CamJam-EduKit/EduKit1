@@ -10,7 +10,8 @@ GPIO.setwarnings(False)
 PINBuzzer = 22 # Sets the buzzer pin 22
 
 # Sets PINBuzzer as an output pin and initialise it to 'off'
-GPIO.setup(PINBuzzer, GPIO.OUT, initial = 0)
+GPIO.setup(PINBuzzer, GPIO.OUT)
+GPIO.output(PINBuzzer, GPIO.LOW)
 
 def dot(): # A single Morse dot
     GPIO.output(PINBuzzer, GPIO.HIGH)
