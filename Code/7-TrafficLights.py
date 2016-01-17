@@ -54,7 +54,7 @@ def TrafficLightSequence():
     # Remember all code in the function is indented
 
 os.system('clear') # Clears the screen
-print "Traffic Lights"
+print("Traffic Lights")
 # Initialise the traffic lights
 StartGreen()
 
@@ -67,8 +67,8 @@ while True: # Loop around forever
         time.sleep(0.1) # Wait for 0.1s
         if GPIO.input(ButtonPin) == False: # If the button is pressed
             ButtonNotPressed = False # Button has been pressed
-        if time.clock()-start<=20: # If under 20 seconds
-            time.sleep (20-start) # Wait until 20s is up
+        if time.clock() - start <= 20: # If under 20 seconds
+            time.sleep (20 - start) # Wait until 20s is up
         TrafficLightSequence() # Runthe traffic light sequence
 
 GPIO.cleanup()
