@@ -1,3 +1,6 @@
+# CamJam Edukit 1 - Basics
+# Worksheet 7 - Traffic Lights
+
 # Import Libraries
 import os
 import time

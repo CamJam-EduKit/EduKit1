@@ -1,3 +1,6 @@
+# CamJam Edukit 1 - Basics
+# Worksheet 6 - Morse Code
+
 # Import Libraries
 import os
 import time
