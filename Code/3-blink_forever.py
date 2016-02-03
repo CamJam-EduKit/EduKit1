@@ -1,3 +1,6 @@
+# CamJam Edukit 1 - Basics
+# Worksheet 3 - Blink LED Forever
+
 # Imports Libraries
 import time
 import RPi.GPIO as GPIO
