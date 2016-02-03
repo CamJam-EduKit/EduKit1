@@ -1,3 +1,6 @@
+# CamJam Edukit 1 - Basics
+# Worksheet 3 - Blinking LED
+
 # Import Libraries
 import time             # A collection of time related commands
 import RPi.GPIO as GPIO # The GPIO commands
