@@ -70,8 +70,8 @@ while True: # Loop around forever
         time.sleep(0.1) # Wait for 0.1s
         if GPIO.input(ButtonPin) == False: # If the button is pressed
             ButtonNotPressed = False # Button has been pressed
-        if time.clock() - start <= 20: # If under 20 seconds
-            time.sleep (20 - start) # Wait until 20s is up
-        TrafficLightSequence() # Runthe traffic light sequence
+            if time.clock() - start <= 20: # If under 20 seconds
+                time.sleep (20 - start) # Wait until 20s is up
+            TrafficLightSequence() # Runthe traffic light sequence
 
 GPIO.cleanup()
