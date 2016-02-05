@@ -12,9 +12,9 @@ GPIO.setwarnings(False)
 
 # Set up variables for the LED, Buzzer and switch pins
 
-# Set up each of the input (swich) and output (LEDs, Buzzer) pins
+# Set up each of the input (switch) and output (LEDs, Buzzer) pins
 
-# Define a function for the initial state (green LED on, rest off)
+# Define a function for the initial state (Green LED on, rest off)
 # (If you have the second 'pedestrian LEDs, turn the red on & green
 # off)
 def StartGreen():
@@ -25,7 +25,7 @@ def StartGreen():
 def SteadyAmber():
     # Remember all code in the function is indented
 
-# Turn the abber off, and then the red on for 1 second
+# Turn the amber off, and then the red on for 1 second
 def SteadyRed():
     # Remember all code in the function is indented
 
