@@ -63,7 +63,7 @@ def SteadyRed():
 def StartWalking():
     # Make the buzzer buzz on and off, half a second of
     # sound followed by half a second of silence
-    # GPIO.output(PinRedPedestrian, GPIO.Low)
+    # GPIO.output(PinRedPedestrian, GPIO.LOW)
     # GPIO.output(PinGreenPedestrian, GPIO.HIGH)
     iCount = 1
     while iCount <= 4:
