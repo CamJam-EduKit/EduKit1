@@ -92,6 +92,7 @@ def DontWalk():
 def FlashingAmberGreen():
     # Remember all code in the function is indented
     GPIO.output(PinRed, GPIO.LOW)
+	
     iCount = 1
     while iCount <= 6:
         GPIO.output(PinAmber, GPIO.HIGH)
@@ -125,7 +126,7 @@ def TrafficLightSequence():
     FlashingAmber()
     StartGreen()
 
-os.system('clear') # Clears the screen
+os.system('clear') # Clears the terminal
 print("Traffic Lights")
 # Initialise the traffic lights
 StartGreen()

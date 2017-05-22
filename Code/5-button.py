@@ -19,8 +19,8 @@ print("---------------")
 
 print(GPIO.input(ButtonPin))
 
-# The commands indented after this 'while' will be repeated forever
-# or until 'Ctrl+c' is pressed.
+# The commands indented after this ‘while’ will be repeated
+# forever or until ‘Ctrl+c’ is pressed.
 while True:
     # If the button is pressed, ButtonPin will be 'false'
     if GPIO.input(ButtonPin) == False:
@@ -28,7 +28,7 @@ while True:
         print(GPIO.input(ButtonPin))
         time.sleep(1) # Sleep for 1 second
     else:
-        os.system('clear') # Clears the screen
-        print("Waiting for you to press a button")
-
+        os.system('clear') # Clears the Terminal Window
+        print("Waiting for you to press the button")
+        
     time.sleep(0.5) # Sleep for 0.5 seconds

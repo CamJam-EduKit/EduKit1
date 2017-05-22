@@ -56,17 +56,17 @@ def FlashingAmber():
 def TrafficLightSequence():
     # Remember all code in the function is indented
 
-os.system('clear') # Clears the screen
+os.system('clear') # Clears the terminal
 print("Traffic Lights")
 # Initialise the traffic lights
 StartGreen()
 
 # Here is the loop that waits at lease 20 seconds before
-# stopping the cars if the button has been pressedS
+# stopping the cars if the button has been pressed
 while True: # Loop around forever
     ButtonNotPressed = True # Button has not been pressed
     start = time.time() # Records the current time (seconds since 1st January 1970)
-    while ButtonNotPressed: # While the button as not been pressed
+    while ButtonNotPressed: # While the button has not been pressed
         time.sleep(0.1) # Wait for 0.1s
         if GPIO.input(PinButton) == False: # If the button is pressed
             now = time.time()

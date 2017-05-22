@@ -18,21 +18,21 @@ GPIO.output(PINBuzzer, GPIO.LOW)
 
 def dot(): # A single Morse dot
     GPIO.output(PINBuzzer, GPIO.HIGH)
-    time.sleep(.1)
+    time.sleep(0.1)
     GPIO.output(PINBuzzer, GPIO.LOW)
-    time.sleep(.1)
+    time.sleep(0.1)
 
 def dash(): # A single Morse dash
     GPIO.output(PINBuzzer, GPIO.HIGH)
-    time.sleep(.3)
+    time.sleep(0.3)
     GPIO.output(PINBuzzer, GPIO.LOW)
-    time.sleep(.1)
+    time.sleep(0.1)
 
 def letterSpace(): # The space between letters
-    time.sleep(.2)
+    time.sleep(0.2)
 
 def wordSpace(): # The space between words
-    time.sleep(.6)
+    time.sleep(0.6)
 
 def morseS(): # The Morse for S, ...
     dot()
@@ -49,7 +49,7 @@ os.system('clear') # Clears the terminal window
 print("Morse Code")
 
 # Prompt the user for input
-loop_count = input("How many times would you like SOS to loop?: ")
+loop_count = input("How many times would you like SOS to loop? ")
 loop_count = int(loop_count) # Convert text input into an integer
 
 while loop_count > 0: # Loop around the chosen number of times
