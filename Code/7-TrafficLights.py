@@ -2,9 +2,9 @@
 # Worksheet 7 - Traffic Lights
 
 # Import Libraries
-import os
-import time
-import RPi.GPIO as GPIO
+import os               # Gives Python access to Linux commands
+import time             # Proves time related commands
+import RPi.GPIO as GPIO # Gives access to the GPIO Pins
 
 # Set the GPIO pin naming mode
 GPIO.setmode(GPIO.BCM)
@@ -65,7 +65,7 @@ StartGreen()
 # stopping the cars if the button has been pressed
 while True: # Loop around forever
     ButtonNotPressed = True # Button has not been pressed
-    start = time.time() # Records the current time (seconds since 1st January 1970)
+    start = time.time() # Records the current time
     while ButtonNotPressed: # While the button has not been pressed
         time.sleep(0.1) # Wait for 0.1s
         if GPIO.input(PinButton) == False: # If the button is pressed
