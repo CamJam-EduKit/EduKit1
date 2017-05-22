@@ -2,9 +2,9 @@
 # Worksheet 4 - User Input
 
 # Load Libraries
-import os
-import time
-import RPi.GPIO as GPIO
+import os                # Allows you to interact with the operating system
+import time              # A collection of time related commands
+from gpiozero import LED # The LED functions from GPIO Zero
 
 GPIO.setmode(GPIO.BCM) # Set the GPIO pin naming mode
 GPIO.setwarnings(False) # Supress warnings
@@ -19,19 +19,20 @@ GPIO.setup(LEDRed, GPIO.OUT)
 GPIO.setup(LEDYellow, GPIO.OUT)
 GPIO.setup(LEDGreen, GPIO.OUT)
 
-os.system('clear') # Clears the screen
+os.system('clear') # Clears the terminal window
 
+# Ask the user which colour LED to blink 
 print("Which LED would you like to blink")
 print("1: Red?")
 print("2: Yellow?")
 print("3: Green?")
-
-# Prints prompts to the screen and waits for input from the user
 led_choice = input("Choose your option: ")
-count = input("How many times would you like it to blink?: ")
-
-# Convert user input from string (text) to integer
+# Ensure that the led_choice variable is a whole number (integer)
 led_choice = int(led_choice)
+
+# Ask the user how many times they want the LED to blink
+count = input("How many times would you like it to blink?: ")
+# Ensure that the count variable is a whole number (integer)
 count = int(count)
 
 # Set the LEDChoice variable depending on the LED choice

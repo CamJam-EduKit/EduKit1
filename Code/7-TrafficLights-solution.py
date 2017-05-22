@@ -138,6 +138,7 @@ while True: # Loop around forever
     while ButtonNotPressed: # While the button as not been pressed
         time.sleep(0.1) # Wait for 0.1s
         if GPIO.input(PinButton) == False: # If the button is pressed
+            print("Button has been pressed")
             now = time.time()
             ButtonNotPressed = False # Button has been pressed
             if (now - start) <= 20: # If under 20 seconds

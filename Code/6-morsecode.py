@@ -2,9 +2,9 @@
 # Worksheet 6 - Morse Code
 
 # Import Libraries
-import os
-import time
-import RPi.GPIO as GPIO
+import os               # Gives Python access to Linux commands
+import time             # Proves time related commands
+import RPi.GPIO as GPIO # Gives access to the GPIO Pins
 
 # Set the GPIO pin naming mode
 GPIO.setmode(GPIO.BCM)
@@ -44,11 +44,13 @@ def morseO(): # The Morse for O, ---
     dash()
     dash()
 
-os.system('clear') # Clears the screen
+os.system('clear') # Clears the terminal window
+
 print("Morse Code")
-# Prompt
+
+# Prompt the user for input
 loop_count = input("How many times would you like SOS to loop?: ")
-loop_count = int(loop_count)
+loop_count = int(loop_count) # Convert text input into an integer
 
 while loop_count > 0: # Loop around the chosen number of times
     loop_count = loop_count - 1

@@ -1,9 +1,9 @@
 # CamJam Edukit 1 - Basics
 # Worksheet 3 - Blink LED Forever
 
-# Imports Libraries
-import time
-import RPi.GPIO as GPIO
+# Import Libraries
+import time             # A collection of time related commands
+import RPi.GPIO as GPIO # The GPIO commands
 
 # Set the GPIO pin naming mode
 GPIO.setmode(GPIO.BCM)

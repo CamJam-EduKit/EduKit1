@@ -2,13 +2,12 @@
 # Worksheet 5 - Button
 
 # Import Libraries
-import os                # Gives Python access to Linux commands
+import os               # Gives Python access to Linux commands
 import time             # Proves time related commands
 import RPi.GPIO as GPIO # Gives Python access to the GPIO pins
 
-# Set the GPIO pin naming mode
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)  #Set the GPIO pin naming mode
+GPIO.setwarnings(False) #Supress warnings
 
 # Set pin 25 as an input pin
 ButtonPin = 25
