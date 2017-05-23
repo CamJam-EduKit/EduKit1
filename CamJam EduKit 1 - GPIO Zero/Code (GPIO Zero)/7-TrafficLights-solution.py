@@ -67,7 +67,7 @@ def FlashingAmberGreen():
     print("Flashing amber and green")
     red.off()
     green.off()
-	
+
     iCount = 1
     while iCount <= 6:
         yellow.on()

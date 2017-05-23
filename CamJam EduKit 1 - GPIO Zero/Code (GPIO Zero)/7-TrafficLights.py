@@ -1,5 +1,5 @@
 # CamJam Edukit 1 - Basics
-# Worksheet 7 - Traffic Lights
+# Worksheet 7 - Traffic Lights Template
 
 # Import Libraries
 import os
