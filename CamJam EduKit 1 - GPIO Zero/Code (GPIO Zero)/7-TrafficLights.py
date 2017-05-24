@@ -9,7 +9,7 @@ from gpiozero import LED, Button, Buzzer
 # Set up variables for the LED, Buzzer and switch pins
 
 # Define a function for the initial state (Green LED on, rest off)
-# (If you have the second 'pedestrian LEDs, turn the red on & green
+# (If you have the second 'pedestrian' LEDs, turn the red on & green
 # off)
 def StartGreen():
     # Remember all code in the function is indented
