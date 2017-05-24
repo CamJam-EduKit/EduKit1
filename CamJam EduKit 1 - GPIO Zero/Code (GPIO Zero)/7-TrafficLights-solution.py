@@ -14,7 +14,7 @@ buzzer = Buzzer(22)
 button = Button(25)
 
 # Define a function for the initial state (Green LED on, rest off)
-# (If you have the second 'pedestrian LEDs, turn the red on & green
+# (If you have the second 'pedestrian' LEDs, turn the red on & green
 # off)
 def StartGreen():
     print("Green light on")
@@ -111,7 +111,7 @@ StartGreen()
 
 waiting_time = 20
 
-# Here is the loop that waits at lease 20 seconds before
+# Here is the loop that waits at least 20 seconds before
 # stopping the cars if the button has been pressed
 while True: # Loop around forever
     ButtonNotPressed = True # Button has not been pressed
