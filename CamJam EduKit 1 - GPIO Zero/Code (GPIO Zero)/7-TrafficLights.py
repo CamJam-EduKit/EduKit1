@@ -58,13 +58,13 @@ StartGreen()
 # Here is the loop that waits at least 20 seconds before
 # stopping the cars if the button has been pressed
 while True: # Loop around forever
-    ButtonNotPressed = True # Button has not been pressed
+    buttonNotPressed = True # Button has not been pressed
     start = time.time() # Records the current time (seconds since 1st January 1970)
-    while ButtonNotPressed: # While the button has not been pressed
+    while buttonNotPressed: # While the button has not been pressed
         time.sleep(0.1) # Wait for 0.1s
         if (button.ispressed): # If the button is pressed
             now = time.time()
-            ButtonNotPressed = False # Button has been pressed
+            buttonNotPressed = False # Button has been pressed
             if (now - start) <= 20: # If under 20 seconds
                 time.sleep (20 - (now - start)) # Wait until 20s is up
             TrafficLightSequence() # Run the traffic light sequence
