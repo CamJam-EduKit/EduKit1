@@ -19,7 +19,7 @@ print("1: Red?")
 print("2: Yellow?")
 print("3: Green?")
 chosenLED = input("Choose your option: ")
-# Ensure that the led_choice variable is a whole number (integer)
+# Ensure that the chosenLED variable is a whole number (integer)
 chosenLED = int(chosenLED)
 
 # Ask the user how many times they want the LED to blink
