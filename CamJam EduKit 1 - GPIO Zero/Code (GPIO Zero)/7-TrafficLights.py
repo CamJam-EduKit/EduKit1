@@ -55,7 +55,7 @@ print("Traffic Lights")
 # Initialise the traffic lights
 StartGreen()
 
-# Here is the loop that waits at lease 20 seconds before
+# Here is the loop that waits at least 20 seconds before
 # stopping the cars if the button has been pressed
 while True: # Loop around forever
     ButtonNotPressed = True # Button has not been pressed
