@@ -33,10 +33,10 @@ if chosenLED == 1:
     LEDChoice = red
 elif chosenLED == 2:
     print("You picked the Yellow LED")
-    chosenLED = yellow
-elif led_choice == 3:
+    LEDChoice = yellow
+elif chosenLED == 3:
     print("You picked the Green LED")
-    chosenLED = green
+    LEDChoice = green
 
 # If we have chosen a valid choice, flash the LED
 if chosenLED > 0:
