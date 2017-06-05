@@ -62,7 +62,7 @@ while True: # Loop around forever
     start = time.time() # Records the current time (seconds since 1st January 1970)
     while buttonNotPressed: # While the button has not been pressed
         time.sleep(0.1) # Wait for 0.1s
-        if (button.ispressed): # If the button is pressed
+        if (button.is_pressed): # If the button is pressed
             now = time.time()
             buttonNotPressed = False # Button has been pressed
             if (now - start) <= 20: # If under 20 seconds
