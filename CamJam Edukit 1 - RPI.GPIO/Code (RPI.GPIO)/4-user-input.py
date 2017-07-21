@@ -4,10 +4,10 @@
 # Import Libraries
 import os                # Allows you to interact with the operating system
 import time              # A collection of time related commands
-from gpiozero import LED # The LED functions from GPIO Zero
+import RPi.GPIO as GPIO  # The GPIO commands
 
 GPIO.setmode(GPIO.BCM)  # Set the GPIO pin naming mode
-GPIO.setwarnings(False) # Supress warnings
+GPIO.setwarnings(False) # Suppress warnings
 
 # Set up variables to store the pin numbers
 LEDRed = 18

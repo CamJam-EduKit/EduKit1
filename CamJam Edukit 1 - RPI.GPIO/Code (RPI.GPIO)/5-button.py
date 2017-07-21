@@ -7,7 +7,7 @@ import time             # Proves time related commands
 import RPi.GPIO as GPIO # Gives Python access to the GPIO pins
 
 GPIO.setmode(GPIO.BCM)  #Set the GPIO pin naming mode
-GPIO.setwarnings(False) #Supress warnings
+GPIO.setwarnings(False) #Suppress warnings
 
 # Set pin 25 as an input pin
 ButtonPin = 25
@@ -19,8 +19,8 @@ print("---------------")
 
 print(GPIO.input(ButtonPin))
 
-# The commands indented after this ‘while’ will be repeated
-# forever or until ‘Ctrl+c’ is pressed.
+# The commands indented after this 'while' will be repeated
+# forever or until 'Ctrl+c' is pressed.
 while True:
     # If the button is pressed, ButtonPin will be 'false'
     if GPIO.input(ButtonPin) == False:
