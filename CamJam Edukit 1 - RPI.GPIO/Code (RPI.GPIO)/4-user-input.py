@@ -1,13 +1,13 @@
-# CamJam Edukit 1 - Basics
+# CamJam EduKit 1 - Basics
 # Worksheet 4 - User Input
 
 # Import Libraries
-import os                # Allows you to interact with the operating system
-import time              # A collection of time related commands
+import os  # Allows you to interact with the operating system
+import time  # A collection of time related commands
 import RPi.GPIO as GPIO  # The GPIO commands
 
 GPIO.setmode(GPIO.BCM)  # Set the GPIO pin naming mode
-GPIO.setwarnings(False) # Suppress warnings
+GPIO.setwarnings(False)  # Suppress warnings
 
 # Set up variables to store the pin numbers
 LEDRed = 18
@@ -19,9 +19,9 @@ GPIO.setup(LEDRed, GPIO.OUT)
 GPIO.setup(LEDYellow, GPIO.OUT)
 GPIO.setup(LEDGreen, GPIO.OUT)
 
-os.system('clear') # Clears the terminal window
+os.system('clear')  # Clears the terminal window
 
-# Ask the user which colour LED to blink 
+# Ask the user which colour LED to blink
 print("Which LED would you like to blink?")
 print("1: Red?")
 print("2: Yellow?")
@@ -50,10 +50,10 @@ elif led_choice == 3:
 if LEDChoice > 0:
     # While the count variable is greater than zero
     while count > 0:
-        GPIO.output(LEDChoice, GPIO.HIGH) # Turn the chosen LED on
-        time.sleep(1)                     # Sleep for 1 second
+        GPIO.output(LEDChoice, GPIO.HIGH)  # Turn the chosen LED on
+        time.sleep(1)  # Sleep for 1 second
         GPIO.output(LEDChoice, GPIO.LOW)  # Turn the chosen LED off
-        time.sleep(2)                     # Sleep for 2 seconds
-        count = count - 1                 # Decrease the count by one
+        time.sleep(2)  # Sleep for 2 seconds
+        count = count - 1  # Decrease the count by one
 
 GPIO.cleanup()

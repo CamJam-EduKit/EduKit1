@@ -1,9 +1,9 @@
-# CamJam Edukit 1 - Basics
+# CamJam EduKit 1 - Basics
 # Worksheet 2 - LEDs
 
 # Import Libraries
-import time              # A collection of time related commands
-from gpiozero import LED # The LED functions from GPIO Zero
+import time  # A collection of time related commands
+from gpiozero import LED  # The LED functions from GPIO Zero
 
 # Set pins 18, 23 and 24 to be LEDs
 red = LED(18)
