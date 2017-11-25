@@ -6,7 +6,7 @@ import os  # Gives Python access to Linux commands
 import time  # Proves time related commands
 from gpiozero import Buzzer  # The GPIO Zero buzzer functions
 
-# Set pin 25 as a buzzer
+# Set pin 22 as a buzzer
 buzzer = Buzzer(22)
 
 
