@@ -124,7 +124,7 @@ def flashingamber():
 
 # Go through the traffic light sequence by calling each function
 # one after the other.
-def trafficlightqequence():
+def trafficlightsequence():
     # Remember all code in the function is indented
     # Green will already be on
     steadyamber()
@@ -154,4 +154,4 @@ while True:  # Loop around forever
             buttonnotpressed = False  # Button has been pressed
             if (now - start) <= 20:  # If under 20 seconds
                 time.sleep(20 - (now - start))  # Wait until 20s is up
-                trafficlightqequence()  # Run the traffic light sequence
+            trafficlightsequence()  # Run the traffic light sequence
