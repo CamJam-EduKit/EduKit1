@@ -1,5 +1,5 @@
-# CamJam Edukit 1 - Basics
-# Worksheet 6 - Morse Code
+# CamJam Edukit 1 – Basics
+# Worksheet 6 – Morse Code
 
 # Import Libraries
 import os  # Gives Python access to Linux commands
@@ -51,7 +51,7 @@ print("Morse Code")
 
 # Prompt the user for input
 loop_count = input("How many times would you like SOS to loop? ")
-loop_count = int(loop_count)  # Convert text input into an integer
+loop_count = int(loop_count)  # Convert text input to an integer
 
 while loop_count > 0:  # Loop around the chosen number of times
     morseS()
@@ -60,4 +60,4 @@ while loop_count > 0:  # Loop around the chosen number of times
     letterSpace()
     morseS()
     wordSpace()
-    loop_count = loop_count - 1
+    loop_count -= 1

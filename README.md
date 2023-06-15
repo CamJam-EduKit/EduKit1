@@ -1,6 +1,6 @@
 # CamJam Edukit 1
 
-![CamJam EduKit 1](https://cdn.shopify.com/s/files/1/0176/3274/products/EduKit_large.jpg?v=1456169827)
+![CamJam EduKit 1](https://cdn.shopify.com/s/files/1/0176/3274/products/camjam-edukit-camjam-100459-28813050216643_700x.jpg?v=1646620026)
 
 The code contained within this repository is for use with the CamJam Edukit 1, created by the organisers of The Cambridge Raspberry Jam (http://camjam.me), an event for fans of the Raspberry Pi.
 

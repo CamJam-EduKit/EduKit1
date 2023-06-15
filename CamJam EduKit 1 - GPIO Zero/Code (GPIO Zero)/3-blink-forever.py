@@ -1,5 +1,5 @@
-# CamJam EduKit 1 - Basics
-# Worksheet 3 - Blink LED Forever
+# CamJam EduKit 1 – Basics
+# Worksheet 3 – Blink LED Forever
 
 # Import Libraries
 import time  # A collection of time related commands
@@ -17,7 +17,7 @@ while True:
     yellow.on()
     green.on()
 
-    # Wait one second
+    # Wait for one second
     time.sleep(1)
 
     # Turn LEDs off
@@ -25,5 +25,5 @@ while True:
     yellow.off()
     green.off()
 
-    # Wait one second
+    # Wait for one second
     time.sleep(1)

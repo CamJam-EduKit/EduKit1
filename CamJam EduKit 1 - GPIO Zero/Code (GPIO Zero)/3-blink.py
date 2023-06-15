@@ -1,5 +1,5 @@
-# CamJam EduKit 1 - Basics
-# Worksheet 3 - Blinking LED
+# CamJam EduKit 1 – Basics
+# Worksheet 3 – Blinking LED
 
 # Import Libraries
 import time  # A collection of time related commands

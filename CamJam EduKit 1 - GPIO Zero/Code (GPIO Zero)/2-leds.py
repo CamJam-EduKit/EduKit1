@@ -1,5 +1,5 @@
-# CamJam EduKit 1 - Basics
-# Worksheet 2 - LEDs
+# CamJam EduKit 1 – Basics
+# Worksheet 2 – LEDs
 
 # Import Libraries
 import time  # A collection of time related commands

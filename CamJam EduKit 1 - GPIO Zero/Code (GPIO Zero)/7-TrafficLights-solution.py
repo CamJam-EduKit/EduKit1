@@ -1,5 +1,5 @@
-# CamJam EduKit 1 - Basics
-# Worksheet 7 - Traffic Lights - Solution
+# CamJam EduKit 1 – Basics
+# Worksheet 7 – Traffic Lights – Solution
 
 # Import Libraries
 import os
@@ -15,7 +15,7 @@ button = Button(25)
 
 
 # Define a function for the initial state (Green LED on, rest off)
-# (If you have the second 'pedestrian LEDs, turn the red on & green
+# (If you have the second pedestrian LEDs, turn the red on & green
 # off)
 def startgreen():
     print("Green light on")
@@ -24,8 +24,8 @@ def startgreen():
     red.off()
 
 
-# Turn the green off and the amber on for 3 seconds
-# ('Pedestrian' red LED stays lit)
+# Turn the green off, and the amber on, for 3 seconds
+# ('Pedestrian' red-LED stays lit)
 def steadyamber():
     print("Steady amber")
     green.off()
@@ -34,7 +34,7 @@ def steadyamber():
     time.sleep(3)
 
 
-# Turn the amber off, and then the red on for 1 second
+# Turn the amber off, and then the red on for 1 second.
 def steadyred():
     print("Steady red")
     green.off()
@@ -47,7 +47,7 @@ def steadyred():
 # (If you have the 'pedestrian' LEDs, turn the red off and green on)
 def startwalking():
     # Make the buzzer buzz on and off, half a second of
-    # sound followed by half a second of silence
+    # sound followed by half a second of silence.
     print("Start walking")
     count = 1
     while count <= 4:
@@ -74,13 +74,13 @@ def flashingambergreen():
     red.off()
     green.off()
 
-    iCount = 1
-    while iCount <= 6:
+    count = 1
+    while count <= 6:
         yellow.on()
         time.sleep(0.5)
         yellow.off()
         time.sleep(0.5)
-        iCount += 1
+        count += 1
     green.on()
 
 
@@ -121,9 +121,9 @@ startgreen()
 waiting_time = 20
 
 # Here is the loop that waits at lease 20 seconds before
-# stopping the cars if the button has been pressed
+# stopping the cars if the button has been pressed.
 while True:  # Loop around forever
-    buttonnotpressed = True  # Button has not been pressed
+    buttonnotpressed = True  # The Button has not been pressed
     start = time.time()  # Records the current time
     while buttonnotpressed:  # While the button has not been pressed
         time.sleep(0.1)  # Wait for 0.1s
@@ -132,5 +132,5 @@ while True:  # Loop around forever
             now = time.time()
             buttonnotpressed = False  # Button has been pressed
             if (now - start) <= waiting_time:  # If under 20 seconds
-                time.sleep(waiting_time - (now - start))  # Wait until 20s is up
+                time.sleep(waiting_time - (now - start))  # Wait until 20 seconds is up
             trafficlightsequence()  # Run the traffic light sequence

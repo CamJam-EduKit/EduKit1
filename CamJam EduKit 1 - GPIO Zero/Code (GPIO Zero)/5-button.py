@@ -1,10 +1,10 @@
-# CamJam EduKit 1 - Basics
-# Worksheet 5 - Button
+# CamJam EduKit 1 – Basics
+# Worksheet 5 – Button
 
 # Import Libraries
 import os  # Gives Python access to Linux commands
 import time  # Proves time related commands
-from gpiozero import Button  # The GPIO Zero button functions
+from gpiozero import Button  # The GPIOZero button functions
 
 # Set pin 25 as a button input
 button = Button(25)
