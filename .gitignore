@@ -56,10 +56,4 @@ docs/_build/
 # PyBuilder
 target/
 desktop.ini
-.idea/workspace.xml
-.idea/vcs.xml
-.idea/EduKit1.iml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/encodings.xml
-.idea/modules.xml
-.idea/misc.xml
+.idea/
